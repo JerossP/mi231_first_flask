@@ -40,5 +40,5 @@ def delete_book(book_id):
     books = [book for book in books if book["id"] != book_id]
     return '', 204
 
-if _name_ == '_main_':
+if __name__ == '__main__':
     app.run(debug=True)
